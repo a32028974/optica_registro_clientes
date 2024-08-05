@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Registro de Clientes - Óptica Cristal</title>
+</head>
+<body>
+    <header>
+        <h1>Registro de Clientes</h1>
+    </header>
+    <main>
+        <form id="cliente-form">
+            <fieldset>
+                <legend>Datos del Cliente</legend>
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre" required>
+                <label for="apellido">Apellido:</label>
+                <input type="text" id="apellido" name="apellido" required>
+                <label for="dni">DNI:</label>
+                <input type="text" id="dni" name="dni" required>
+                <label for="domicilio">Domicilio:</label>
+                <input type="text" id="domicilio" name="domicilio" required>
+                <label for="localidad">Localidad:</label>
+                <input type="text" id="localidad" name="localidad" required>
+                <label for="telefono">Teléfono:</label>
+                <input type="text" id="telefono" name="telefono" required>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+            </fieldset>
+            <fieldset>
+                <legend>Datos de la Receta</legend>
+                <label for="lejos_od_esf">Lejos OD ESF:</label>
+                <input type="text" id="lejos_od_esf" name="lejos_od_esf">
+                <label for="lejos_od_cil">Lejos OD CIL:</label>
+                <input type="text" id="lejos_od_cil" name="lejos_od_cil">
+                <label for="lejos_od_a">Lejos OD A:</label>
+                <input type="text" id="lejos_od_a" name="lejos_od_a">
+                <label for="lejos_od_color">Lejos OD Color:</label>
+                <input type="text" id="lejos_od_color" name="lejos_od_color">
+
+                <label for="lejos_oi_esf">Lejos OI ESF:</label>
+                <input type="text" id="lejos_oi_esf" name="lejos_oi_esf">
+                <label for="lejos_oi_cil">Lejos OI CIL:</label>
+                <input type="text" id="lejos_oi_cil" name="lejos_oi_cil">
+                <label for="lejos_oi_a">Lejos OI A:</label>
+                <input type="text" id="lejos_oi_a" name="lejos_oi_a">
+                <label for="lejos_oi_color">Lejos OI Color:</label>
+                <input type="text" id="lejos_oi_color" name="lejos_oi_color">
+
+                <label for="cerca_od_esf">Cerca OD ESF:</label>
+                <input type="text" id="cerca_od_esf" name="cerca_od_esf">
+                <label for="cerca_od_cil">Cerca OD CIL:</label>
+                <input type="text" id="cerca_od_cil" name="cerca_od_cil">
+                <label for="cerca_od_a">Cerca OD A:</label>
+                <input type="text" id="cerca_od_a" name="cerca_od_a">
+                <label for="cerca_od_color">Cerca OD Color:</label>
+                <input type="text" id="cerca_od_color" name="cerca_od_color">
+
+                <label for="cerca_oi_esf">Cerca OI ESF:</label>
+                <input type="text" id="cerca_oi_esf" name="cerca_oi_esf">
+                <label for="cerca_oi_cil">Cerca OI CIL:</label>
+                <input type="text" id="cerca_oi_cil" name="cerca_oi_cil">
+                <label for="cerca_oi_a">Cerca OI A:</label>
+                <input type="text" id="cerca_oi_a" name="cerca_oi_a">
+                <label for="cerca_oi_color">Cerca OI Color:</label>
+                <input type="text" id="cerca_oi_color" name="cerca_oi_color">
+            </fieldset>
+            <fieldset>
+                <legend>Datos del Pedido</legend>
+                <label for="fecha_entrega">Fecha de Entrega:</label>
+                <input type="date" id="fecha_entrega" name="fecha_entrega" required>
+                <label for="total">Total:</label>
+                <input type="number" id="total" name="total" required>
+                <label for="seña">Seña:</label>
+                <input type="number" id="seña" name="seña" required>
+                <label for="saldo">Saldo:</label>
+                <input type="number" id="saldo" name="saldo" required>
+                <label for="dr">Dr:</label>
+                <input type="text" id="dr" name="dr">
+                <label for="entregado_por">Entregado por:</label>
+                <input type="text" id="entregado_por" name="entregado_por">
+            </fieldset>
+            <button type="submit">Registrar Cliente</button>
+        </form>
+        <p id="status"></p>
+    </main>
+    <script src="js/registro_clientes.js"></script>
+</body>
+</html>
